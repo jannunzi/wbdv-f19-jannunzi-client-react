@@ -1,0 +1,19 @@
+{
+  "config": {
+    "url": "http://localhost:4000/api/jannunzi/employees/",
+    "schema": [
+      { "id": "fname", "label": "First Name",  "type": "text" },
+      { "id": "dob", "label": "Date of Birth", "type": "date" },
+      { "id": "gender", "label":  "Gender",
+        "defaultValue": "FEMALE",
+        "type": "select", "options": [
+          {"label":  "Male", "value":  "MALE"},
+          {"label":  "Female", "value":  "FEMALE"}
+        ]
+      }
+    ],
+    "meta": [
+
+    ]
+  }
+}

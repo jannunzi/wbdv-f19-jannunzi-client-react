@@ -7,6 +7,23 @@ const initialState = {
     ]
 }
 
+const initialDonuts = {
+    donuts: [
+        {id: "123", flavor: "Chocolate"},
+        {id: "234", flavor: "Boston Cream"},
+        {id: "345", flavor: "Coffee"}
+    ]
+}
+
+const donutReducer = (state = initialDonuts, action) => {
+    switch (action.type) {
+        case 'DELETE_DONUT':
+            return {
+                donuts: state.donuts.filter(donut => donut.id !== action.donutId)
+            }
+    }
+}
+
 const widgetListReducer = (state = initialState, action) => {
 
     console.log(action)
@@ -31,6 +48,10 @@ const widgetListReducer = (state = initialState, action) => {
         default:
             return state
     }
+
+
+
+
 }
 
 export default widgetListReducer;

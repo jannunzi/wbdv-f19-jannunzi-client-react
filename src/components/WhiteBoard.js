@@ -21,7 +21,6 @@ export default class WhiteBoard extends React.Component {
             <Router>
                 <div>
                     <h1>White Board</h1>
-
                     <Provider store={store}>
                         <WidgetListContainer/>
                     </Provider>
