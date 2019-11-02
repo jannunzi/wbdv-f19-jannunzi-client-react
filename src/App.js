@@ -12,7 +12,7 @@ function App() {
   return (
       <Provider store={store}>
         <div className="container-fluid">
-            <DataTableContainer/>
+            <WhiteBoard/>
         </div>
       </Provider>
   );
