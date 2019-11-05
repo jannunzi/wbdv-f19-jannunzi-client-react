@@ -7,12 +7,14 @@ import dataTableReducer from "./generic/table/DataTableReducer";
 import {createStore} from "redux";
 import {Provider} from "react-redux";
 import DataTableContainer from "./generic/table/DataTableContainer";
+import {OmdbApiPrototype} from "./containers/OmdbApiPrototype";
 const store = createStore(dataTableReducer)
 function App() {
   return (
       <Provider store={store}>
         <div className="container-fluid">
-            <WhiteBoard/>
+            <OmdbApiPrototype/>
+            {/*<WhiteBoard/>*/}
         </div>
       </Provider>
   );
